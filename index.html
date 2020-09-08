@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>二叉树生成器</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="BasicGrey.css">
+    <style>
+        #gameView {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basic-grey">
+        <ul>
+            <li>请用,(单字节)分割数字,0-999之间的数字</li>
+            <li>">"一个一个节点插入</li>
+            <li>">>"一次性插入所有节点</li>
+            <li>双击节点删除</li>
+        </ul>
+        <label>
+            <input type="text" id="numbertext" title="" placeholder="请用,(单字节)分割数字,0-999之间的数字"
+                value="30,25,19,37,35,40,39,34,22,42,36" />
+            <input type="button" value=">" title="增加一个节点" onclick="AddOneNumber()" class="button" />
+            <input type="button" value=">>" title="一次性增加所有节点" onclick="AddAllNumber()" class="button" />
+        </label>
+        <br />
+        <canvas id="gameView"> </canvas>
+    </div>
+
+
+
+    <script src="easeljs-0.8.2.min.js"></script>
+    <script src="BinaryTree.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
